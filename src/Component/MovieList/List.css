@@ -1,0 +1,74 @@
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Borel&display=swap");
+
+:root {
+  --primary-color: #fd4766;
+  --gradient-color: linear-gradient(
+    -224deg,
+    var(--primary-color) 0,
+    #337dff 100%
+  );
+}
+
+.list_title {
+  font-size: 2.75rem;
+  margin: 40px 0;
+  background: var(--gradient-color);
+  -webkit-background-clip: text;
+  display: inline-block;
+  font-weight: 900;
+  letter-spacing: 2.5px;
+  font-family: "Abril Fatface", cursive;
+  -webkit-text-fill-color: transparent;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.list_cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* Search */
+.first {
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.first input {
+  height: 45px;
+  width: 50%;
+  border-radius: 50px;
+  box-shadow: 3px 3px #6f8faf;
+  border: none;
+  outline-color: white;
+}
+
+.first input[placeholder] {
+  padding-left: 30px;
+  font-size: 15px;
+  color: #6f8faf;
+}
+
+.btn {
+  border: 2px solid black;
+  width: 50px;
+  height: 33px;
+  font-size: 20px;
+  text-align: center;
+  padding-top: 12px;
+  padding-right: 20px;
+  border-radius: 0 50px 50px 0;
+  box-shadow: 3px 3px #6f8faf;
+  border: none;
+  background-color: white;
+}
+
+@media screen and (max-width: 576px) {
+  .first input {
+    width: 80%;
+  }
+}

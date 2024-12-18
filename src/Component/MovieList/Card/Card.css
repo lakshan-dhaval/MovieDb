@@ -1,0 +1,115 @@
+.card {
+  cursor: pointer;
+  position: relative;
+  margin: 1.19rem;
+  overflow: hidden;
+  border: 1px solid rgb(99, 99, 99);
+  z-index: 0;
+  min-width: 200px;
+  display: inline-block;
+  transition: transform 0.2s;
+  border-radius: 10px;
+}
+
+.card:hover {
+  box-shadow: 0 0 5px #03e9f4, 0 0 25px #03e9f4, 0 0 50px #03e9f4,
+    0 0 200px #03e9f4;
+  transition: scale(1.2);
+  z-index: 1000;
+}
+
+.card-Img {
+  height: 300px;
+}
+
+.card-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  bottom: 0;
+  height: 290px;
+  width: 85%;
+  position: absolute;
+  padding: 0 16px 16px 16px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 1));
+  opacity: 0;
+  transition: opacity 0.2s;
+}
+
+.card-details:hover {
+  opacity: 1;
+}
+
+.card-title {
+  margin-bottom: 0.4rem;
+  font-size: 16px;
+  font-weight: 900;
+}
+
+.card-relasedate {
+  margin-bottom: 0.25rem;
+  font-size: 0.75rem;
+}
+
+.card-Ratings {
+  float: right;
+}
+
+.card-discription {
+  font-style: italic;
+  font-size: 0.75rem;
+  margin-bottom: 0.25rem;
+}
+
+/* Media queries for responsiveness */
+@media screen and (max-width: 768px) {
+  .card {
+    min-width: 150px;
+  }
+
+  .card-Img {
+    height: 250px;
+  }
+
+  .card-details {
+    height: 230px;
+  }
+
+  .card-title {
+    font-size: 14px;
+  }
+
+  .card-relasedate {
+    font-size: 0.65rem;
+  }
+
+  .card-discription {
+    font-size: 0.65rem;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .card {
+    min-width: 120px;
+  }
+
+  .card-Img {
+    height: 180px;
+  }
+
+  .card-details {
+    height: 160px;
+  }
+
+  .card-title {
+    font-size: 12px;
+  }
+
+  .card-relasedate {
+    font-size: 0.6rem;
+  }
+
+  .card-discription {
+    font-size: 0.6rem;
+  }
+}

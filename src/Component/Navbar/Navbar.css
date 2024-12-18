@@ -1,0 +1,65 @@
+body {
+  background-color: #0e1525;
+}
+
+.Navbar {
+  display: flex;
+  padding: 0 5%;
+}
+
+.linkClass {
+  display: flex;
+  align-items: center;
+}
+
+a > span {
+  margin: 0 30px;
+  cursor: pointer;
+  color: white;
+  font-size: 1.3rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+.section-span {
+  display: inline-block;
+  color: #c6c9d8bf;
+  transition: all 0.4s ease-in-out;
+  font-weight: 500 !important;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  position: relative;
+  display: inline-block;
+  color: #03e9f4;
+  text-decoration: none;
+  overflow: hidden;
+}
+
+.section-span:hover {
+  padding: 14px 10px;
+  background-color: green;
+  color: #ffffff;
+  box-shadow: 0 0 5px #03e9f4, 0 0 25px #03e9f4, 0 0 50px #03e9f4,
+    0 0 200px #03e9f4;
+}
+
+@media screen and (max-width: 768px) {
+  .Navbar {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+  }
+
+  a > span {
+    margin: 10px 16px;
+    font-size: 1rem;
+  }
+
+  .first {
+    margin-top: 20px;
+  }
+}
